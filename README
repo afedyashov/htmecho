@@ -1,0 +1,14 @@
+htmecho is a home for plain-text to browser utilities.
+
+Currently, only one such utility lives here - wwwpy:
+
+wwwpy is a plain text transformation tool (written in Python 3.2) that can be used as an 'echo' replacement. 
+Whatever plain text input it receives will be transformed into HTML and sent to the default browser.
+Page shown in the browser is enriched with incremental grep interface and simple coloring facility, which allows users to give different colors to result of different filters.
+
+Some useful usage patterns:
+- perform grep-like regexp filtering over the data you already have in the browser window
+- apply colors to filters to improve analysis (e.g. gray for 'DEBUG' log lines, yellow for 'WARNING' and red for 'ERROR')
+- on dual-monitor machines is is convenient to keep console on one screen and see the in the browser on the other screen. This way - you'll always see the command and the outcome at the same time. Just place console and browser as convenient and pipe your commands to wwwpy - results would appear as new tabs in your browser window
+
+Initial purpose of this tool was to help those who have to deal with log files: developers, testers & support engineers.
