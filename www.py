@@ -5,7 +5,7 @@
 #   echo 123 | www.py
 # Workarounds:
 # * either call python explicitly: echo 123 | python www.py
-# * use a registry path, ref: http://support.microsoft.com/default.aspx?kbid=321788
+# * or use a registry patch, ref: http://support.microsoft.com/default.aspx?kbid=321788
 
 import sys
 import os
@@ -44,6 +44,7 @@ def handle_input(i_f, o_f):
 				o_f.write(htmline + "\n")	
 				total_lines_generated += 1
 	return { "total_lines_fetched": total_lines_fetched, "total_lines_generated": total_lines_generated, "total_chars_fetched": total_chars_fetched}
+
 def get_html_template():
 	return """
 <html xmlns="http://www.w3.org/1999/xhtml">
