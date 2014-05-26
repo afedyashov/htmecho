@@ -185,6 +185,10 @@ def shell_open_file(filename):
 		prc = subprocess.Popen(['xdg-open', filename], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		prc.wait()
 		return True
+	elif platform.system() == "Darwin":
+		prc = subprocess.Popen(['open', filename], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+		prc.wait()
+		return True
 	return False
 
 def get_flag(flag, args=sys.argv):
